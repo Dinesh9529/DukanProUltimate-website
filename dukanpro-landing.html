@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO: Primary -->
+<title>DukanPro – Sirohi का #1 Billing & POS Software | Free Trial</title>
+<meta name="description" content="Sirohi, Rajasthan ke dukandaaron ke liye best billing software. Garments, Kirana, Hotel, Restaurant – sab ke liye. Anti-theft barcode, WhatsApp orders, GST bill. 7 din free trial.">
+<meta name="keywords" content="billing software Sirohi, POS software Rajasthan, garments billing software, dukan software Sirohi, GST billing Rajasthan, inventory software Sirohi, kirana software, hotel software Sirohi, dukan pro, DukanPro">
+<link rel="canonical" href="https://dukan-pro-ultimate.onrender.com/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="DukanPro – Sirohi का #1 Dukan Software">
+<meta property="og:description" content="Anti-theft billing, WhatsApp orders, GST reports – sab ek jagah. 7 din free trial.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dukan-pro-ultimate.onrender.com/">
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "DukanPro Ultimate",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR",
+    "description": "7 din free trial"
+  },
+  "description": "Garments aur Retail shops ke liye complete billing, inventory aur online order system.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "47"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #0a0a0a;
+  --deep: #111218;
+  --card: #16181f;
+  --border: #2a2d3a;
+  --gold: #f5a623;
+  --gold-light: #ffc85c;
+  --green: #22c55e;
+  --red: #ef4444;
+  --white: #f0ede8;
+  --muted: #8b8fa8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ===== NOISE TEXTURE ===== */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ===== NAV ===== */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: -0.5px;
+}
+
+.nav-logo span { color: var(--white); }
+
+.nav-cta {
+  background: var(--gold);
+  color: var(--black);
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 40px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(245,166,35,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(34,197,94,0.05) 0%, transparent 60%);
+}
+
+.hero-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245,166,35,0.1);
+  border: 1px solid rgba(245,166,35,0.3);
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 13px;
+  color: var(--gold);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: blink 1.5s ease infinite;
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+h1 .gold { color: var(--gold); }
+h1 .line { display: block; }
+
+.hero-sub {
+  font-size: 17px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+.hero-sub strong { color: var(--white); }
+
+.hero-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--black);
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(245,166,35,0.3); }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: all 0.25s;
+}
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.trust-item .check { color: var(--green); font-size: 15px; }
+
+/* ===== DEMO CARD ===== */
+.demo-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+}
+
+.demo-topbar {
+  background: var(--deep);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot.r { background: #ef4444; }
+.dot.y { background: #f59e0b; }
+.dot.g { background: #22c55e; }
+
+.demo-url {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--muted);
+  margin-left: 8px;
+}
+
+.demo-body { padding: 20px; }
+
+.demo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 13px;
+}
+
+.demo-row:last-child { border: none; }
+
+.demo-label { color: var(--muted); }
+
+.demo-val {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.demo-val.green { color: var(--green); }
+.demo-val.gold { color: var(--gold); }
+.demo-val.red { color: var(--red); }
+
+.demo-bill {
+  background: rgba(245,166,35,0.08);
+  border: 1px solid rgba(245,166,35,0.2);
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 14px;
+}
+
+.bill-header {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.bill-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 3px 0;
+  color: var(--muted);
+}
+
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.alert-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #fca5a5;
+  animation: pulse-alert 2s ease infinite;
+}
+
+@keyframes pulse-alert {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* ===== PAIN SECTION ===== */
+.pain-section {
+  padding: 80px 40px;
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.section-tag {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.pain-grid {
+  max-width: 1100px;
+  margin: 48px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.pain-card {
+  background: var(--black);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s;
+}
+
+.pain-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.pain-icon { font-size: 32px; margin-bottom: 14px; }
+
+.pain-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.pain-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+.pain-loss {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--red);
+  font-weight: 600;
+}
+
+/* ===== SOLUTION SECTION ===== */
+.solution-section {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.feature-list { list-style: none; }
+
+.feature-item {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.feature-item:last-child { border: none; }
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  background: rgba(245,166,35,0.1);
+  border: 1px solid rgba(245,166,35,0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.feature-text h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.feature-text p { font-size: 14px; color: var(--muted); }
+
+/* ===== STATS ===== */
+.stats-bar {
+  background: var(--gold);
+  padding: 40px;
+}
+
+.stats-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.stat-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--black);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: rgba(0,0,0,0.6);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* ===== BUSINESS TYPES ===== */
+.biz-section {
+  padding: 80px 40px;
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+}
+
+.biz-grid {
+  max-width: 1100px;
+  margin: 48px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.biz-card {
+  background: var(--black);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.biz-card:hover, .biz-card.active {
+  border-color: var(--gold);
+  background: rgba(245,166,35,0.05);
+}
+
+.biz-emoji { font-size: 36px; margin-bottom: 10px; }
+.biz-name { font-size: 14px; font-weight: 600; }
+.biz-name-hi { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+/* ===== PRICING ===== */
+.pricing-section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+  text-align: left;
+}
+
+.price-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.price-card:hover { transform: translateY(-4px); }
+
+.price-card.featured {
+  border-color: var(--gold);
+  background: linear-gradient(145deg, rgba(245,166,35,0.08), var(--card));
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--black);
+  padding: 4px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.price-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.price-amount {
+  font-family: 'Syne', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.price-period { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+
+.price-features { list-style: none; margin-bottom: 28px; }
+.price-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 7px 0;
+  color: var(--muted);
+}
+.price-features li .tick { color: var(--green); font-size: 16px; }
+.price-features li.active { color: var(--white); }
+
+.price-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s;
+}
+
+.price-btn.outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--white);
+}
+.price-btn.outline:hover { border-color: var(--gold); color: var(--gold); }
+
+.price-btn.filled {
+  background: var(--gold);
+  color: var(--black);
+}
+.price-btn.filled:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+/* ===== LEAD FORM ===== */
+.lead-section {
+  padding: 80px 40px;
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+}
+
+.lead-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.lead-form-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px;
+}
+
+.form-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.form-sub { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+
+.form-group { margin-bottom: 16px; }
+
+.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  width: 100%;
+  background: var(--black);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: var(--white);
+  font-size: 15px;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form-input:focus { border-color: var(--gold); }
+.form-input option { background: var(--black); }
+
+.submit-btn {
+  width: 100%;
+  background: var(--gold);
+  color: var(--black);
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin-top: 8px;
+  transition: all 0.25s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.submit-btn:hover { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(245,166,35,0.3); }
+.submit-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.success-icon { font-size: 56px; margin-bottom: 16px; }
+.success-title { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.success-sub { font-size: 14px; color: var(--muted); }
+
+/* Lead right side */
+.lead-promise h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.lead-promise h3 .gold { color: var(--gold); }
+
+.promise-list { list-style: none; margin-bottom: 32px; }
+
+.promise-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.promise-item:last-child { border: none; }
+
+.promise-num {
+  width: 32px;
+  height: 32px;
+  background: var(--gold);
+  color: var(--black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.promise-text h4 { font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+.promise-text p { font-size: 13px; color: var(--muted); }
+
+.wa-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(37,211,102,0.08);
+  border: 1px solid rgba(37,211,102,0.2);
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+  color: #86efac;
+}
+
+.wa-note .wa-icon { font-size: 24px; }
+
+/* ===== TESTIMONIALS ===== */
+.testi-section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.testi-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.testi-stars { color: var(--gold); font-size: 16px; margin-bottom: 14px; }
+
+.testi-text {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testi-avatar {
+  width: 40px;
+  height: 40px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.testi-name { font-size: 15px; font-weight: 600; }
+.testi-shop { font-size: 12px; color: var(--muted); }
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: gap;
+}
+
+.footer-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+.footer-copy { color: var(--muted); font-size: 13px; }
+
+/* ===== FLOATING WA BUTTON ===== */
+.wa-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 200;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(37,211,102,0.4);
+  text-decoration: none;
+  animation: wa-pulse 3s ease infinite;
+  transition: transform 0.2s;
+}
+
+.wa-float:hover { transform: scale(1.1); }
+
+@keyframes wa-pulse {
+  0%,100% { box-shadow: 0 8px 32px rgba(37,211,102,0.4); }
+  50% { box-shadow: 0 8px 48px rgba(37,211,102,0.7); }
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 500;
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay.open { display: flex; }
+
+.modal-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 440px;
+  width: 100%;
+  position: relative;
+  animation: modal-in 0.3s ease;
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px; right: 20px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.modal-close:hover { color: var(--white); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero-grid, .solution-grid, .lead-inner { grid-template-columns: 1fr; gap: 40px; }
+  .pricing-grid, .testi-grid { grid-template-columns: 1fr; }
+  .stats-inner { grid-template-columns: repeat(2,1fr); gap: 30px; }
+  nav { padding: 14px 20px; }
+  .hero { padding: 100px 20px 60px; }
+  .pain-section, .biz-section, .lead-section { padding: 60px 20px; }
+  footer { flex-direction: column; gap: 20px; text-align: center; }
+}
+
+/* ===== CITY BADGE ===== */
+#cityBadge {
+  display: none;
+  margin-bottom: 16px;
+  background: rgba(34,197,94,0.1);
+  border: 1px solid rgba(34,197,94,0.3);
+  color: #86efac;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* Scroll animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.calculator-section {
+  padding: 80px 40px;
+  background: var(--black);
+}
+.calc-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: var(--card);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  align-items: center;
+}
+.result-box {
+  background: var(--deep);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--gold);
+  text-align: center;
+}
+.result-label { font-size: 14px; color: var(--muted); margin-bottom: 10px; }
+.result-val { font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 800; color: var(--gold); margin-bottom: 20px; }
+.result-breakdown { text-align: left; border-top: 1px solid var(--border); padding-top: 15px; }
+.b-item { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; color: var(--muted); }
+.b-item span:last-child { color: var(--green); font-weight: 600; }
+
+@media (max-width: 768px) {
+  .calc-grid { grid-template-columns: 1fr; padding: 20px; }
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Dukan<span>Pro</span></div>
+  <button class="nav-cta" onclick="openModal()">Free Trial Shuru Karo →</button>
+</nav>
+
+<!-- HERO -->
+<p style="opacity:0.8;margin-top:10px;">
+  ✔ Sirohi, Abu Road, Pindwara, Sheoganj ke dukandaro ke liye specially design kiya gaya.
+  </p>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-badge">🇮🇳 Made for Indian Dukandaar</div>
+      <div id="cityBadge">📍 <span id="cityName">Aapke Shehar</span> mein available</div>
+
+      <h1>
+        <span class="line">Dukan Band Karo</span>
+        <span class="line"><span class="gold">Theft Se.</span> Grow Karo</span>
+        <span class="line">Automatically.</span>
+      </h1>
+
+      <p class="hero-sub">
+        <strong>Barcode fraud, staff rate manipulation, zero repeat customers</strong> — yeh sab band hoga. DukanPro ek software mein sab solve karta hai.
+      </p>
+
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="openModal()">7 Din Free Trial →</button>
+        <a href="https://dukan-pro-ultimate.onrender.com/" target="_blank" class="btn-secondary">Live Demo Dekho</a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-item"><span class="check">✓</span> No credit card</div>
+        <div class="trust-item"><span class="check">✓</span> 30 min setup</div>
+        <div class="trust-item"><span class="check">✓</span> WhatsApp support</div>
+      </div>
+    </div>
+
+    <!-- DEMO CARD -->
+    <div class="hero-right">
+      <div class="demo-card">
+        <div class="demo-topbar">
+          <div class="dot r"></div>
+          <div class="dot y"></div>
+          <div class="dot g"></div>
+          <div class="demo-url">dukan-pro-ultimate.onrender.com</div>
+        </div>
+        <div class="demo-body">
+          <div class="demo-row">
+            <span class="demo-label">Aaj ki Sales</span>
+            <span class="demo-val green">₹18,450</span>
+          </div>
+          <div class="demo-row">
+            <span class="demo-label">Stock Items</span>
+            <span class="demo-val">247 items</span>
+          </div>
+          <div class="demo-row">
+            <span class="demo-label">Pending Bills</span>
+            <span class="demo-val gold">3</span>
+          </div>
+          <div class="demo-row">
+            <span class="demo-label">WhatsApp Reminders</span>
+            <span class="demo-val green">Auto ✓</span>
+          </div>
+
+          <div class="demo-bill">
+            <div class="bill-header">GST Bill — #1094</div>
+            <div class="bill-item"><span>Blue Denim Shirt (L)</span><span>₹850</span></div>
+            <div class="bill-item"><span>White Kurta (XL)</span><span>₹640</span></div>
+            <div class="bill-item"><span>GST 5%</span><span>₹74</span></div>
+            <div class="bill-total"><span>Total</span><span>₹1,564</span></div>
+          </div>
+
+          <div class="alert-bar">
+            🚨 Barcode mismatch detected — Item #47 | Original: ₹850 → Changed: ₹450
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN SECTION -->
+<section class="pain-section">
+  <div style="max-width:1100px;margin:0 auto">
+    <div class="section-tag">Aapki Takleef</div>
+    <h2 class="section-title">Har Dukandaar Yeh Roz Jhelte Hain</h2>
+
+    <div class="pain-grid">
+      <div class="pain-card reveal">
+        <div class="pain-icon">🏷️</div>
+        <div class="pain-title">Barcode Tag Fraud</div>
+        <div class="pain-desc">Staff ₹850 ka tag ukhaar ke ₹450 ka lagata hai. Aap pakad hi nahi paate.</div>
+        <div class="pain-loss">Avg loss: ₹8,000–15,000/month</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon">💸</div>
+        <div class="pain-title">Staff Rate Manipulation</div>
+        <div class="pain-desc">Billing ke waqt rate change ho jaata hai. Chhoot bina pooche de di jaati hai.</div>
+        <div class="pain-loss">Avg loss: ₹5,000–10,000/month</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon">😶</div>
+        <div class="pain-title">Zero Repeat Customers</div>
+        <div class="pain-desc">Customer aaya, gaya — phir kabhi nahi aaya. Follow-up ka koi system nahi.</div>
+        <div class="pain-loss">Lost opportunity: ₹20,000+/month</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon">📦</div>
+        <div class="pain-title">Inventory Mismatch</div>
+        <div class="pain-desc">Size aur color ka hisaab gadbad rehta hai. Stock khatam hone ka pata nahi chalta.</div>
+        <div class="pain-loss">Avg shrinkage: 3–7% of revenue</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon">🌐</div>
+        <div class="pain-title">Google pe Zero Visibility</div>
+        <div class="pain-desc">"Garment shop near me" search karo — competitor dikhta hai, aap nahi.</div>
+        <div class="pain-loss">Missed customers: 15–30/month</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon">📋</div>
+        <div class="pain-title">GST Return ka Dard</div>
+        <div class="pain-desc">Mahine ke end mein haath se hisaab lagana — CA ke paas jaana, galtiyan, penalty.</div>
+        <div class="pain-loss">CA fees + penalty: ₹3,000+/month</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calculator-section reveal">
+  <div class="calc-container">
+    <div class="calc-header">
+      <div class="section-tag">Profit Calculator</div>
+      <h2 class="section-title">Dekho DukanPro Kitne <span class="gold">Rupaye Bachayega</span></h2>
+      <p style="color:var(--muted); margin-bottom: 30px;">Apni dukan ki details daalo aur loss ka hisaab dekho</p>
+    </div>
+
+    <div class="calc-grid">
+      <div class="calc-inputs">
+        <div class="form-group">
+          <label class="form-label">Mahine ki Total Sales (₹)</label>
+          <input type="number" id="calcSales" class="form-input" value="500000" oninput="calculateSavings()">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Staff ki sankhya</label>
+          <input type="number" id="calcStaff" class="form-input" value="2" oninput="calculateSavings()">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Inventory Size (Items)</label>
+          <select id="calcStock" class="form-input" onchange="calculateSavings()">
+            <option value="0.02">Chhoti (0-500)</option>
+            <option value="0.04" selected>Medium (500-2000)</option>
+            <option value="0.07">Badi (2000+)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="calc-result">
+        <div class="result-box">
+          <div class="result-label">Aapka Monthly Bachao (Estimated)</div>
+          <div class="result-val" id="totalSavings">₹23,000</div>
+          <div class="result-breakdown">
+            <div class="b-item"><span>Theft/Fraud Control:</span> <span id="theftSave">₹10,000</span></div>
+            <div class="b-item"><span>Inventory Leakage:</span> <span id="stockSave">₹8,000</span></div>
+            <div class="b-item"><span>Repeat Customers:</span> <span id="customerSave">₹5,000</span></div>
+          </div>
+          <button class="btn-primary" style="width:100%; margin-top:20px;" onclick="openModal('Pro')">Ye Paisa Bachana Shuru Karo →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num">₹23K</div>
+      <div class="stat-label">Average monthly saving per dukan</div>
+    </div>
+    <div>
+      <div class="stat-num">30min</div>
+      <div class="stat-label">Setup time — aaj se shuru karo</div>
+    </div>
+    <div>
+      <div class="stat-num">4.8★</div>
+      <div class="stat-label">Rating from 47+ dukandaars</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Made for Indian retail market</div>
+    </div>
+  </div>
+</div>
+
+<!-- SOLUTION SECTION -->
+<section class="solution-section">
+  <div class="section-tag reveal">DukanPro Kya Karta Hai</div>
+  <h2 class="section-title reveal">Ek Software, Sab Problems Solve</h2>
+
+  <div class="solution-grid">
+    <ul class="feature-list">
+      <li class="feature-item reveal">
+        <div class="feature-icon">🔔</div>
+        <div class="feature-text">
+          <h4>Anti-Theft Barcode Alarm</h4>
+          <p>Barcode change hone pe turant alert. ₹850 ka item ₹450 mein nahi bikega — kabhi nahi.</p>
+        </div>
+      </li>
+      <li class="feature-item reveal">
+        <div class="feature-icon">📱</div>
+        <div class="feature-text">
+          <h4>WhatsApp Auto Orders</h4>
+          <p>Customer WhatsApp pe order kare — seedha aapke POS mein aaye. Koi call nahi, koi confusion nahi.</p>
+        </div>
+      </li>
+      <li class="feature-item reveal">
+        <div class="feature-icon">📦</div>
+        <div class="feature-text">
+          <h4>Size/Color Variant Control</h4>
+          <p>S, M, L, XL aur har color ka alag stock. Kabhi overbooking nahi, kabhi shortfall nahi.</p>
+        </div>
+      </li>
+      <li class="feature-item reveal">
+        <div class="feature-icon">🌍</div>
+        <div class="feature-text">
+          <h4>Google Visible Shop Page</h4>
+          <p>Aapki dukan Google pe dikhe — "garment shop Sirohi" search kare koi toh aap pehle aao.</p>
+        </div>
+      </li>
+      <li class="feature-item reveal">
+        <div class="feature-icon">📊</div>
+        <div class="feature-text">
+          <h4>GST Reports Auto-Generate</h4>
+          <p>GSTR-1, GSTR-3B — ek click mein ready. CA ko dene wali file hamesha prepared.</p>
+        </div>
+      </li>
+      <li class="feature-item reveal">
+        <div class="feature-icon">🤖</div>
+        <div class="feature-text">
+          <h4>AI Repeat Customer System</h4>
+          <p>3 mahine se nahi aaya customer? Auto WhatsApp. Offer bhejna? Auto. Aap so rahe ho — system kaam kar raha hai.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="demo-card reveal" style="align-self:start">
+      <div class="demo-topbar">
+        <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+        <div class="demo-url">AI Insights Dashboard</div>
+      </div>
+      <div class="demo-body">
+        <div class="demo-row">
+          <span class="demo-label">Top Selling Item</span>
+          <span class="demo-val">Blue Shirt (L)</span>
+        </div>
+        <div class="demo-row">
+          <span class="demo-label">Reorder Alert</span>
+          <span class="demo-val red">3 items low</span>
+        </div>
+        <div class="demo-row">
+          <span class="demo-label">Profit Margin</span>
+          <span class="demo-val green">34.2%</span>
+        </div>
+        <div class="demo-row">
+          <span class="demo-label">WA Reminders Sent</span>
+          <span class="demo-val gold">47 today</span>
+        </div>
+        <div class="demo-row">
+          <span class="demo-label">Google Clicks</span>
+          <span class="demo-val green">+23 this week</span>
+        </div>
+        <div class="demo-bill">
+          <div class="bill-header">Staff Activity Log</div>
+          <div class="bill-item"><span>Ramesh — 12 bills</span><span class="demo-val green" style="font-size:12px">Normal ✓</span></div>
+          <div class="bill-item"><span>Suresh — 8 bills</span><span class="demo-val red" style="font-size:12px">⚠ Rate Edit</span></div>
+          <div class="bill-item"><span>Avg discount</span><span>2.3%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS TYPES -->
+<section class="biz-section">
+  <div style="max-width:1100px;margin:0 auto;text-align:center">
+    <div class="section-tag">Kaun Kaam Aata Hai</div>
+    <h2 class="section-title">Aapki Dukan Type Choose Karo</h2>
+    <p style="color:var(--muted);margin-top:8px;font-size:15px">DukanPro har business ke liye alag features activate karta hai</p>
+
+    <div class="biz-grid reveal" id="bizGrid">
+      <div class="biz-card active" onclick="selectBiz(this,'Garments')">
+        <div class="biz-emoji">👔</div>
+        <div class="biz-name">Garments</div>
+        <div class="biz-name-hi">कपड़े की दुकान</div>
+      </div>
+      <div class="biz-card" onclick="selectBiz(this,'Kirana')">
+        <div class="biz-emoji">🛒</div>
+        <div class="biz-name">Kirana</div>
+        <div class="biz-name-hi">किराना स्टोर</div>
+      </div>
+      <div class="biz-card" onclick="selectBiz(this,'Restaurant')">
+        <div class="biz-emoji">🍽️</div>
+        <div class="biz-name">Restaurant</div>
+        <div class="biz-name-hi">रेस्टोरेंट / कैफे</div>
+      </div>
+      <div class="biz-card" onclick="selectBiz(this,'Hotel')">
+        <div class="biz-emoji">🏨</div>
+        <div class="biz-name">Hotel</div>
+        <div class="biz-name-hi">होटल / गेस्टहाउस</div>
+      </div>
+      <div class="biz-card" onclick="selectBiz(this,'Salon')">
+        <div class="biz-emoji">✂️</div>
+        <div class="biz-name">Salon</div>
+        <div class="biz-name-hi">सैलून / ब्यूटी</div>
+      </div>
+      <div class="biz-card" onclick="selectBiz(this,'Medical')">
+        <div class="biz-emoji">💊</div>
+        <div class="biz-name">Medical</div>
+        <div class="biz-name-hi">मेडिकल स्टोर</div>
+      </div>
+      <div class="biz-card" onclick="selectBiz(this,'Hardware')">
+        <div class="biz-emoji">🔧</div>
+        <div class="biz-name">Hardware</div>
+        <div class="biz-name-hi">हार्डवेयर</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="section-tag">Plans</div>
+  <h2 class="section-title">Simple Pricing — Koi Chhupa Charge Nahi</h2>
+  <p style="color:var(--muted);margin-top:8px;font-size:15px">Sab plans mein 7 din free trial. Card nahi chahiye.</p>
+
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <div class="price-name">Basic</div>
+      <div class="price-amount">₹499</div>
+      <div class="price-period">/mahina — Chhoti dukan ke liye</div>
+      <ul class="price-features">
+        <li class="active"><span class="tick">✓</span> Billing & GST reports</li>
+        <li class="active"><span class="tick">✓</span> Inventory tracking</li>
+        <li class="active"><span class="tick">✓</span> 1 staff login</li>
+        <li><span style="color:var(--border)">—</span> Anti-theft alarm</li>
+        <li><span style="color:var(--border)">—</span> WhatsApp automation</li>
+        <li><span style="color:var(--border)">—</span> AI insights</li>
+      </ul>
+      <button class="price-btn outline" onclick="openModal('Basic')">Free Trial Shuru Karo</button>
+    </div>
+
+    <div class="price-card featured reveal">
+      <div class="popular-badge">⭐ Most Popular</div>
+      <div class="price-name">Pro</div>
+      <div class="price-amount">₹999</div>
+      <div class="price-period">/mahina — Growing dukan ke liye</div>
+      <ul class="price-features">
+        <li class="active"><span class="tick">✓</span> Sab Basic features</li>
+        <li class="active"><span class="tick">✓</span> Anti-theft barcode alarm</li>
+        <li class="active"><span class="tick">✓</span> WhatsApp auto-reminders</li>
+        <li class="active"><span class="tick">✓</span> 5 staff logins</li>
+        <li class="active"><span class="tick">✓</span> Google shop page</li>
+        <li><span style="color:var(--border)">—</span> AI insights</li>
+      </ul>
+      <button class="price-btn filled" onclick="openModal('Pro')">Free Trial Shuru Karo</button>
+    </div>
+
+    <div class="price-card reveal">
+      <div class="price-name">Ultimate</div>
+      <div class="price-amount">₹1,799</div>
+      <div class="price-period">/mahina — Badi dukan ke liye</div>
+      <ul class="price-features">
+        <li class="active"><span class="tick">✓</span> Sab Pro features</li>
+        <li class="active"><span class="tick">✓</span> AI business insights</li>
+        <li class="active"><span class="tick">✓</span> Online orders (WhatsApp)</li>
+        <li class="active"><span class="tick">✓</span> Unlimited staff logins</li>
+        <li class="active"><span class="tick">✓</span> Partner network access</li>
+        <li class="active"><span class="tick">✓</span> Priority WhatsApp support</li>
+      </ul>
+      <button class="price-btn outline" onclick="openModal('Ultimate')">Free Trial Shuru Karo</button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi-section">
+  <div class="section-tag">Log Kya Keh Rahe Hain</div>
+  <h2 class="section-title reveal">Asli Dukandaar, Asli Results</h2>
+
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">"Pehle mahine mein hi 4 barcode fraud pakde. Staff ab jaanta hai system sab dekh raha hai. Sales bhi 18% badhi."</div>
+      <div class="testi-author">
+        <div class="testi-avatar">R</div>
+        <div>
+          <div class="testi-name">Ramesh Patel</div>
+          <div class="testi-shop">Patel Garments, Surat</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">"WhatsApp se order aata hai seedha system mein. Raat ko sone ke baad bhi orders process ho rahe the. Kamal hai."</div>
+      <div class="testi-author">
+        <div class="testi-avatar">S</div>
+        <div>
+          <div class="testi-name">Sunita Verma</div>
+          <div class="testi-shop">Verma Kirana Store, Jaipur</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">"GST return ka kaam itna aasaan ho gaya. CA ki fee bachti hai, aur galtiyan bhi nahi hoti. Setup mein 30 min lage."</div>
+      <div class="testi-author">
+        <div class="testi-avatar">M</div>
+        <div>
+          <div class="testi-name">Mahesh Sharma</div>
+          <div class="testi-shop">Sharma Medical, Indore</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD CAPTURE -->
+<section class="lead-section" id="trial-form">
+  <div class="lead-inner">
+    <div class="lead-promise">
+      <div class="section-tag">Free Trial</div>
+      <h3>Aaj Shuru Karo —<br><span class="gold">30 Din Bilkul Free</span></h3>
+
+      <ul class="promise-list">
+        <li class="promise-item">
+          <div class="promise-num">1</div>
+          <div class="promise-text">
+            <h4>Form bharo — 2 minute</h4>
+            <p>Bas naam, mobile aur dukan type. Koi card nahi, koi commitment nahi.</p>
+          </div>
+        </li>
+        <li class="promise-item">
+          <div class="promise-num">2</div>
+          <div class="promise-text">
+            <h4>WhatsApp pe credentials aayenge</h4>
+            <p>30 minute mein login details tumhare WhatsApp pe honge.</p>
+          </div>
+        </li>
+        <li class="promise-item">
+          <div class="promise-num">3</div>
+          <div class="promise-text">
+            <h4>Aaj se billing shuru</h4>
+            <p>Setup simple hai. Pehla bill 30 minute mein nikal sakte ho.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="wa-note">
+        <span class="wa-icon">💬</span>
+        <div>Support chahiye? <strong>WhatsApp karo seedha</strong> — 10 AM se 8 PM, Rajasthan time.</div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="lead-form-wrap">
+      <div id="mainForm">
+        <div class="form-title">Free Trial Request</div>
+        <div class="form-sub">30 din free — koi card nahi chahiye</div>
+
+        <div class="form-group">
+          <label class="form-label">Dukan ka Naam *</label>
+          <input class="form-input" id="shopName" placeholder="Jaise: Patel Garments" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Aapka Naam *</label>
+          <input class="form-input" id="ownerName" placeholder="Malik ka naam" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label">WhatsApp Number *</label>
+          <input class="form-input" id="mobile" placeholder="10 digit number" type="tel" maxlength="10">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Dukan Type *</label>
+          <select class="form-input" id="bizType">
+            <option value="">Select karo</option>
+            <option>Garments</option>
+            <option>Kirana</option>
+            <option>Restaurant</option>
+            <option>Hotel</option>
+            <option>Salon</option>
+            <option>Medical Store</option>
+            <option>Hardware</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Shehar</label>
+          <input class="form-input" id="city" placeholder="Jaise: Sirohi" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Main Takleef kya hai?</label>
+          <select class="form-input" id="problem">
+            <option value="">Select karo (optional)</option>
+            <option>Barcode / Staff Fraud</option>
+            <option>No Repeat Customers</option>
+            <option>GST aur Hisaab</option>
+            <option>Inventory Gadbad</option>
+            <option>Online Orders Chahiye</option>
+          </select>
+        </div>
+
+        <button class="submit-btn" id="submitBtn" onclick="submitLead()">
+          30 Din Free Trial Shuru Karo →
+        </button>
+        <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:12px">
+          Form submit hote hi WhatsApp pe credentials bheje jaayenge
+        </p>
+      </div>
+
+      <div class="form-success" id="successMsg">
+        <div class="success-icon">✅</div>
+        <div class="success-title">Request Received!</div>
+        <div class="success-sub">Aapke WhatsApp pe 30 minute mein credentials bheje jaayenge.<br><br>
+          Koi sawaal ho toh seedha WhatsApp karo 👇
+        </div>
+        <br>
+        <a href="https://wa.me/917303410987?text=DukanPro%20trial%20ke%20liye%20request%20ki%20hai" 
+           target="_blank" 
+           style="display:inline-block;background:#25D366;color:#000;padding:12px 24px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">
+          💬 WhatsApp Karo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+  
+    <a href="tel:7303410987" 
+    style="background:#00c853;color:white;padding:14px 22px;border-radius:8px;
+    text-decoration:none;font-weight:600;">
+    📞 Call Now
+    </a>
+    
+    <a href="https://wa.me/917303410987" 
+    style="background:#25D366;color:white;padding:14px 22px;border-radius:8px;
+    text-decoration:none;font-weight:600;">
+    💬 WhatsApp Demo
+    </a>
+    
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">DukanPro</div>
+  <div class="footer-links">
+    <a href="https://dukan-pro-ultimate.onrender.com/" target="_blank">Live Demo</a>
+    <a href="https://wa.me/917303410987" target="_blank">WhatsApp Support</a>
+    <a href="#trial-form">Free Trial</a>
+  </div>
+  <div class="footer-copy">© 2025 DukanPro — Sirohi, Rajasthan</div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/917303410987?text=DukanPro%20ke%20baare%20mein%20jaanna%20chahta%20hoon" target="_blank" title="WhatsApp pe poochho">💬</a>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="form-title" style="margin-bottom:6px">Free Trial Shuru Karo</div>
+    <div class="form-sub">30 din free — koi card nahi</div>
+    <div class="form-group">
+      <label class="form-label">Dukan ka Naam</label>
+      <input class="form-input" id="m-shop" placeholder="Patel Garments" type="text">
+    </div>
+    <div class="form-group">
+      <label class="form-label">WhatsApp Number</label>
+      <input class="form-input" id="m-mobile" placeholder="10 digit" type="tel" maxlength="10">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Dukan Type</label>
+      <select class="form-input" id="m-biz">
+        <option value="">Select karo</option>
+        <option>Garments</option><option>Kirana</option><option>Restaurant</option>
+        <option>Hotel</option><option>Salon</option><option>Medical Store</option>
+        <option>Hardware</option><option>Other</option>
+      </select>
+    </div>
+    <div id="m-selectedPlan" style="display:none;background:rgba(245,166,35,0.1);border:1px solid rgba(245,166,35,0.3);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--gold);margin-bottom:16px"></div>
+    <button class="submit-btn" onclick="submitModal()">Request Bhejo → WhatsApp Pe Milega</button>
+  </div>
+</div>
+
+<script>
+// ========== CITY DETECTION FROM URL ==========
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const city = params.get('city') || params.get('c');
+  if (city) {
+    const cityClean = city.charAt(0).toUpperCase() + city.slice(1);
+    document.getElementById('cityBadge').style.display = 'flex';
+    document.getElementById('cityName').textContent = cityClean;
+    document.title = `DukanPro – ${cityClean} का #1 Billing Software | Free Trial`;
+    if (document.getElementById('city')) {
+      document.getElementById('city').value = cityClean;
+    }
+  }
+})();
+
+// ========== BIZ TYPE SELECTOR ==========
+function selectBiz(el, type) {
+  document.querySelectorAll('.biz-card').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  const bizInput = document.getElementById('bizType');
+  if (bizInput) bizInput.value = type;
+}
+
+// ========== MODAL ==========
+let selectedPlan = '';
+
+function openModal(plan) {
+  selectedPlan = plan || '';
+  const planEl = document.getElementById('m-selectedPlan');
+  if (plan) {
+    planEl.style.display = 'block';
+    planEl.textContent = `⭐ Plan selected: ${plan}`;
+  } else {
+    planEl.style.display = 'none';
+  }
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+}
+
+document.getElementById('modal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+// ========== LEAD SUBMIT (MAIN FORM) ==========
+async function submitLead() {
+  const shopName  = document.getElementById('shopName').value.trim();
+  const ownerName = document.getElementById('ownerName').value.trim();
+  const mobile    = document.getElementById('mobile').value.trim();
+  const bizType   = document.getElementById('bizType').value;
+  const city      = document.getElementById('city').value.trim();
+  const problem   = document.getElementById('problem').value;
+
+  if (!shopName || !mobile || !bizType) {
+    alert('Dukan ka naam, mobile number aur dukan type zaroori hai!');
+    return;
+  }
+
+  if (mobile.length !== 10 || !/^\d{10}$/.test(mobile)) {
+    alert('10 digit ka sahi mobile number daalo');
+    return;
+  }
+
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Bhej raha hoon...';
+
+  const lead = {
+    id: 'DP_' + Date.now(),
+    shopName, ownerName, mobile, bizType, city, problem,
+    source: 'dukanpro-landing',
+    timestamp: new Date().toISOString()
+  };
+
+  // 1. Save to DukanPro growth engine
+  try {
+    await fetch('https://dukan-pro-growth-engine.onrender.com/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        shop_name: shopName,
+        owner_name: ownerName,
+        mobile: mobile,
+        business_type: bizType,
+        city: city || 'Sirohi',
+        main_problem: problem,
+        source: 'dukanpro-landing-page'
+      })
+    });
+  } catch(e) { /* Silent fail */ }
+
+  // 2. Save locally
+  try {
+    const leads = JSON.parse(localStorage.getItem('dp_leads') || '[]');
+    leads.unshift(lead);
+    localStorage.setItem('dp_leads', JSON.stringify(leads));
+  } catch(e) {}
+
+  // 3. WhatsApp alert to owner
+  const msg = `🔥 *NAYA DUKANPRO LEAD*\n\n` +
+    `🏪 Dukan: ${shopName}\n` +
+    `👤 Malik: ${ownerName || 'N/A'}\n` +
+    `📱 Mobile: ${mobile}\n` +
+    `🏷️ Type: ${bizType}\n` +
+    `📍 City: ${city || 'N/A'}\n` +
+    `❓ Problem: ${problem || 'N/A'}\n\n` +
+    `_DukanPro Landing Page se aaya_`;
+
+  setTimeout(() => {
+    window.open('https://wa.me/917303410987?text=' + encodeURIComponent(msg), '_blank');
+  }, 500);
+
+  // 4. Show success
+  document.getElementById('mainForm').style.display = 'none';
+  document.getElementById('successMsg').style.display = 'block';
+
+  btn.disabled = false;
+  btn.textContent = '30 Din Free Trial Shuru Karo →';
+}
+
+// ========== MODAL SUBMIT ==========
+async function submitModal() {
+  const shop   = document.getElementById('m-shop').value.trim();
+  const mobile = document.getElementById('m-mobile').value.trim();
+  const biz    = document.getElementById('m-biz').value;
+
+  if (!shop || !mobile || !biz) {
+    alert('Sab fields bharo!');
+    return;
+  }
+
+  if (mobile.length !== 10) {
+    alert('10 digit mobile number daalo');
+    return;
+  }
+
+  const msg = `🔥 *DUKANPRO TRIAL REQUEST*\n\n` +
+    `🏪 Dukan: ${shop}\n📱 Mobile: ${mobile}\n` +
+    `🏷️ Type: ${biz}` +
+    (selectedPlan ? `\n⭐ Plan: ${selectedPlan}` : '') +
+    `\n\n_Landing Page Modal se_`;
+
+  try {
+    await fetch('https://dukan-pro-growth-engine.onrender.com/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ shop_name: shop, mobile, business_type: biz, city: 'N/A', source: 'modal' })
+    });
+  } catch(e) {}
+
+  closeModal();
+  setTimeout(() => {
+    window.open('https://wa.me/917303410987?text=' + encodeURIComponent(msg), '_blank');
+  }, 300);
+
+  alert('Request bhej di! WhatsApp pe credentials aayenge 30 minute mein. 🎉');
+}
+
+// ========== SCROLL REVEAL ==========
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+
+function calculateSavings() {
+  const sales = parseFloat(document.getElementById('calcSales').value) || 0;
+  const staff = parseInt(document.getElementById('calcStaff').value) || 0;
+  const stockFactor = parseFloat(document.getElementById('calcStock').value);
+
+  // Logic: 2% loss in theft, 1.5% loss per staff manipulation, inventory leakage
+  const theftLeakage = (sales * 0.02) + (staff * 2000);
+  const stockLeakage = sales * stockFactor;
+  const repeatBusiness = sales * 0.05; // 5% growth via auto WhatsApp
+
+  const total = theftLeakage + stockLeakage + repeatBusiness;
+
+  document.getElementById('theftSave').textContent = '₹' + Math.round(theftLeakage).toLocaleString();
+  document.getElementById('stockSave').textContent = '₹' + Math.round(stockLeakage).toLocaleString();
+  document.getElementById('customerSave').textContent = '₹' + Math.round(repeatBusiness).toLocaleString();
+  document.getElementById('totalSavings').textContent = '₹' + Math.round(total).toLocaleString();
+}
+
+// Initialize once
+calculateSavings();
+
+</script>
+
+<a href="https://wa.me/918890784773"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(0,0,0,0.25);
+z-index:9999;
+">
+💬 WhatsApp
+</a>
+
+</body>
+</html>
